@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omniscient Reader's Viewpoint Community</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Opinión sobre la novela</h1>
+
+        <!-- Primer bloque de contenido -->
+        <div class="content">
+            <div class="text-left">
+                <h2>Opinión sobre la novela:</h2>
+                <p>
+                    A pesar de estar a tan solo 85 capítulos de terminarla, no puedo evitar sentirme profundamente agradecida por haber conocido esta obra. Es la primera novela que leo y ha sido la que me introdujo a este fascinante mundo literario. Lo primero que me atrajo fue su trama, original y llena de acción, con giros sorprendentes que me obligaban leer el siguiente capitulo. Luego, están los personajes, cuyos desarrollos me cautivaron al punto de encariñarme profundamente con ellos. Por otro lado, las ilustraciones, que aparecían entre los párrafos como pequeños visuales, añadieron una magia única a la experiencia. Pero lo que más me conmovió fue cómo la historia explora el metaconcepto del lector, el escritor y la narrativa, haciéndome reflexionar sobre el vínculo especial que compartimos con las historias que amamos. El hecho de estar cerca del final me llena de nostalgia, porque he llegado a acostumbrarme a vivir dentro de este universo. Sin embargo, recuerdo algo que la madre de Kim Dokja menciona en la novela, algo profundamente significativo: una historia se puede apreciar mejor cuando se lee más de una vez. Las segundas lecturas revelan detalles y matices que quizá pasaron desapercibidos la primera vez. Es una invitación a redescubrir y revivir la magia desde un lugar nuevo, más profundo. Y así, aunque esta historia llegue a su final, sé que siempre podre volver a ella, una y otra vez.
+                </p>
+            </div>
+            <div class="image-right">
+                <img 
+                    src="https://i.pinimg.com/736x/57/36/20/573620711265b8917d90970b821c7ed3.jpg" 
+                    alt="Imagen derecha" 
+                    width="10000" 
+                    height="500">
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre nosotros</h2>
+                <p>Exploramos mundos extraordinarios a través de historias y personajes inolvidables. Únete a nuestra comunidad y comparte tu pasión por Omniscient Reader's Viewpoint.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces útiles</h2>
+                <ul class="centered-menu">
+                    <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                    <li><a href="{{ url_for('webtoon') }}">Webtoon y Novela</a></li>
+                    <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+                    <li><a href="{{ url_for('personajes') }}">Personajes</a></li>
+                    <li><a href="{{ url_for('conceptos') }}">Conceptos</a></li>
+                    <li><a href="{{ url_for('opinion') }}">Opinión</a></li>
+                    <li><a href="{{ url_for('dokkaebis') }}">Dokkaebis, Demonios y Dioses externos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contáctanos</h2>
+                <p>Email: contacto@omniscientview.com</p>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Redes sociales:</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Omniscient Reader's Viewpoint | Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>

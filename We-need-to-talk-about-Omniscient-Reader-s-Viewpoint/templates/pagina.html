@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página {{ pagina }} de {{ total }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- pagina.html -->
+<div class="container">
+    <div class="page">
+        <div>{{ contenido|safe }}</div>
+        <div class="pagination">
+            {% if pagina > 1 %}
+                <a href="{{ url_for('mostrar_pagina', numero=pagina-1) }}">Anterior</a>
+            {% endif %}
+            {% if pagina < total %}
+                <a href="{{ url_for('mostrar_pagina', numero=pagina+1) }}">Siguiente</a>
+            {% endif %}
+        </div>
+
+        {% if pagina == 4 %}
+            <!-- Botón "Inicio" solo en la página 4 -->
+            <div class="centered-menu">
+                <a href="{{ url_for('index') }}" class="inicio-boton">Inicio</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html>

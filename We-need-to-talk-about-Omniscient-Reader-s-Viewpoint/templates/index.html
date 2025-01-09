@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omniscient Reader's Viewpoint Community</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Let's talk about Omniscient Reader's Viewpoint</h1>
+
+        <!-- Primer bloque de contenido -->
+        <div class="content">
+            <div class="text-left">
+                <p>
+                    "Este es un desarrollo que yo conozco". En el momento en que pensó eso, el mundo había sido destruido y se había desarrollado en un nuevo universo. La nueva vida de un lector ordinario comienza dentro del mundo de la novela, una novela que solo él había terminado.
+                    Kim Dokja es un simple oficinista, es una persona solitaria cuyo único pasatiempo es leer novelas web, y su favorita fue “Tres formas de sobrevivir al Apocalipsis”. 
+                    Todos los demás lectores perdieron el interés, pero Dokja fue el único que terminó la novela web después de 3149 capítulos. 
+                    Luego, recibe un mensaje misterioso del autor, diciendo que la historia ahora estará monetizada. 
+                    Dokja rápidamente se da cuenta de que "Tres formas de sobrevivir al Apocalipsis" se ha convertido en realidad, y ahora es el único que sabe cómo termina la historia.
+                </p>
+            </div>
+            <div class="image-right">
+                <img 
+                    src="https://1.bp.blogspot.com/-iffwp6lnxdc/YSUXah3NAqI/AAAAAAAAAQM/8wO59xZzddIrBpeR89wbwNmBVKk44wXKwCPcBGAYYCw/w380-h213-p-k-no-nu/lecor%2Bomnisiente.png" 
+                    alt="Imagen derecha" 
+                    width="1000" 
+                    height="500">
+            </div>
+        </div>
+
+        <!-- Segundo bloque de contenido -->
+        <div class="content reverse">
+            <div class="text-right">
+                <p>
+                    El autor de la novela web surcoreana "Lector Omnisciente" es Sing Shong. 
+                    La novela se publicó por primera vez en la plataforma Munpia el 6 de enero de 2018 y finalizó el 2 de febrero de 2020. 
+                    Lector Omnisciente también es conocida como "Omniscient Reader's Viewpoint" en inglés y "Jeonjijeog Dogja Sijeom" en coreano.
+                </p>
+            </div>
+            <div class="image-left">
+                <img 
+                    src="https://cdn1.munpia.com/files/attach/2016/0513/000/8k4uzC9UJuK3sqMe.jpg" 
+                    alt="Imagen izquierda">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre nosotros</h2>
+                <p>Exploramos mundos extraordinarios a través de historias y personajes inolvidables. Únete a nuestra comunidad y comparte tu pasión por Omniscient Reader's Viewpoint.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces útiles</h2>
+                <ul class="centered-menu">
+                    <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                    <li><a href="{{ url_for('webtoon') }}">Webtoon y Novela</a></li>
+                    <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+                    <li><a href="{{ url_for('personajes') }}">Personajes</a></li>
+                    <li><a href="{{ url_for('conceptos') }}">Conceptos</a></li>
+                    <li><a href="{{ url_for('opinion') }}">Opinión</a></li>
+                    <li><a href="{{ url_for('dokkaebis') }}">Dokkaebis, Demonios y Dioses externos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contáctanos</h2>
+                <p>Email: contacto@omniscientview.com</p>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Redes sociales:</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Omniscient Reader's Viewpoint | Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>

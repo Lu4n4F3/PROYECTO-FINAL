@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omniscient Reader's Viewpoint Webtoon</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sobre el Webtoon y la novela</h1>
+
+        <!-- Primer bloque de contenido -->
+        <div class="content">
+            <div class="text-left">
+                <p>
+                    En febrero del 2020, un dia despues de haber terminado a novelaweb,un webtoon sobre ORV(Omniscient Readers Viewpoint) fue anunciado. Actualmente está siendo producido por Redice Studio y publicado por Naver Webtoon(Webtoon coreano). El 19 de agosto, LINE Webtoon(webtoon en inglés) publicó una traducción al inglés que sigue los acontecimientos del libro electrónico, no de la novela web original.
+El webtoon ha alcanzado un alto nivel de popularidad tanto en Corea como en el extranjero; para mayo de 2021, había acumulado 360 millones de visitas globales y se ubica constantemente en la cima de la lista de webtoon de los miércoles en Corea.
+                </p>
+            </div>
+            <div class="image-right">
+                <img 
+                    src="https://i.pinimg.com/736x/69/2f/91/692f910d3e5f6b0785352d9f71350f40.jpg" 
+                    alt="Imagen derecha" 
+                    width="1000" 
+                    height="500"
+                    style="transform: rotate(-90deg);">
+            </div>
+        </div>
+
+        <!-- Segundo bloque de contenido -->
+        <div class="content reverse">
+            <div class="text-right">
+                <p>
+                    El punto de vista del lector omnisciente se publicó originalmente como novela web. La novela está dividida en 5 volúmenes, cada uno de los cuales contiene una serie de episodios, junto con un epílogo de 5 partes. Cada episodio se divide a su vez en alrededor de 4 a 8 capítulos.
+La novela fue extremadamente popular en la comunidad de lectores de novelas web coreanas, habiendo superado los 26 millones de visitas en Munpia en septiembre de 2019.
+                </p>
+            </div>
+            <div class="image-left">
+                <img class="novela"
+                    src="https://64.media.tumblr.com/9663cff78634f174f81b41b64fc450df/b0fa0c8aabd3f693-86/s1280x1920/66ebd99920d1bf3fcca2ce9fda1caa089f40fd01.png" 
+                    alt="Imagen izquierda">
+            </div>
+            <div class="button-right">
+                <button class="btn-enlace" onclick="location.href='/pagina/1'" style="cursor: pointer;">LIBRO INTERACTIVO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre nosotros</h2>
+                <p>Exploramos mundos extraordinarios a través de historias y personajes inolvidables. Únete a nuestra comunidad y comparte tu pasión por Omniscient Reader's Viewpoint.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces útiles</h2>
+                <ul class="centered-menu">
+                    <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                    <li><a href="{{ url_for('webtoon') }}">Webtoon y Novela</a></li>
+                    <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+                    <li><a href="{{ url_for('personajes') }}">Personajes</a></li>
+                    <li><a href="{{ url_for('conceptos') }}">Conceptos</a></li>
+                    <li><a href="{{ url_for('opinion') }}">Opinión</a></li>
+                    <li><a href="{{ url_for('dokkaebis') }}">Dokkaebis, Demonios y Dioses externos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contáctanos</h2>
+                <p>Email: contacto@omniscientview.com</p>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Redes sociales:</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Omniscient Reader's Viewpoint | Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>

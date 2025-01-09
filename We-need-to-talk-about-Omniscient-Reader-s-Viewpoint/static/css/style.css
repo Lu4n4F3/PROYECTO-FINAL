@@ -1,0 +1,344 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eaf7fe; /* Fondo más claro y fresco */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Titles */
+.title {
+    text-align: center;
+    margin: 30px 0;
+    color: #21768a; /* Naranja vibrante */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Content Section */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-left, .text-right {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.text-left {
+    grid-column: 1;
+}
+
+.text-right {
+    grid-column: 2;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-self: center;
+    border: 4px solid #a5506a; /* Borde amarillo cálido */
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #4e7e94; /* Azul vibrante */
+}
+
+/* Footer Styles */
+.footer {
+    background: #4e7e94; /* Azul vibrante */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-section {
+    padding: 15px;
+}
+
+.footer-section h2 {
+    color: #a5506a; /* Amarillo cálido */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff5733; /* Naranja vibrante */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .text-left, .text-right {
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Estilo para las listas */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style-type: none; /* Quitar el marcador de lista */
+    text-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center; /* Alinear texto e imagen verticalmente */
+    margin-bottom: 10px;
+    color: #4e7e94; /* Azul vibrante */
+    font-size: 1rem; /* Tamaño de la fuente */
+    text-align: center;
+}
+
+li img {
+    width: 70px; /* Tamaño pequeño */
+    height: 70px; /* Tamaño pequeño */
+    border-radius: 50%; /* Hacerla redonda */
+    margin-left: 10px; /* Espacio entre el texto y la imagen */
+    border: 2px solid #a5506a; /* Borde cálido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Centrando el menú */
+.centered-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.centered-menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.centered-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: #21768a;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilizando el footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+#book {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+    
+/* Contenedor de la página */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+    
+/* Página del libro */
+.page {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+    
+/* Estilo de los enlaces de navegación */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+    
+.pagination a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: #21768a;
+    color: #fff;
+    border-radius: 5px;
+}
+    
+.pagination a:hover {
+    background-color: #1a5e6d;
+}
+    
+/* Estilo para el título */
+h1 {
+    text-align: center;
+    color: #21768a;
+    font-size: 2rem;
+}
+    
+/* Diseño adaptable */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .page {
+        padding: 15px;
+    }
+}
+
+/* Estilo para el botón "Inicio" */
+.inicio-boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #21768a;
+    /* Mismo color que otros botones */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.inicio-boton:hover {
+    background-color: #195f6b;
+    /* Cambio de color al pasar el cursor */
+}
+
+/* Estilo para el botón "btn-enlace" */
+.btn-enlace {
+    background-color: #21768a;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    font-size: 1rem;
+    /* Tamaño de la fuente */
+    padding: 10px 20px;
+    /* Espaciado dentro del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cursor en forma de mano */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transición suave */
+}
+
+.btn-enlace:hover {
+    background-color: #1a5e6d;
+    /* Color de fondo al pasar el cursor */
+    transform: scale(1.05);
+    /* Aumento de tamaño al pasar el cursor */
+}
+
+/* Añadir sombra en el foco */
+.btn-enlace:focus {
+    outline: none;
+    /* Quitar el borde por defecto del foco */
+    box-shadow: 0 0 8px rgba(33, 118, 138, 0.6);
+    /* Sombra alrededor del botón */
+}

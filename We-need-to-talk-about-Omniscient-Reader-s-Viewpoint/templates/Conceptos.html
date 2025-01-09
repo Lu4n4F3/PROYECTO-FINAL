@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omniscient Reader's Viewpoint Community</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Concepts about Omniscient Reader's Viewpoint</h1>
+
+        <!-- Primer bloque de contenido -->
+        <div class="content">
+            <div class="text-left">
+                <h2>Que es la "historia"?</h2>
+                <p>
+                    Las historias, también conocidas como Narrativas o Fábulas, son el concepto central en el que se basa el mundo de los escenarios y la Corriente Estelar, como se ve en el Punto de vista del lector omnisciente. Las historias se originan a partir de eventos o sucesos que son lo suficientemente notables como para que se cuenten "historias" sobre ellos.
+                </p>
+            </div>
+            <div class="image-right">
+                <img 
+                    src="https://i.pinimg.com/736x/c1/b5/b8/c1b5b870c4517fc8c07d39331f7ff925.jpg" 
+                    alt="Imagen derecha" 
+                    width="1000" 
+                    height="500">
+            </div>
+        </div>
+
+        <!-- Segundo bloque de contenido -->
+        <div class="content reverse">
+            <div class="text-left">
+                <h2>Que es la "probabilidad"?</h2>
+                <p>
+                    Es un término que se usa específicamente para saber si un giro de la trama en una historia tiene sentido. Y eso es exactamente lo que es en ORV también; obliga a los personajes/situaciones a desarrollarse de tal manera que la historia "tenga sentido"
+                </p>
+            </div>
+
+        </div>
+        <!-- Tercero bloque de contenido -->
+        <div class="content reverse">
+            <div class="text-left">
+                <h2>Teoria del cine desconectado</h2>
+                <p>
+                    La "Teoría de la Película Desconectada" es una forma de explicar un cierto tipo de paradoja temporal en Tres maneras de sobrevivir en un mundo en ruinas. Esta paradoja ocurre cuando dos seres que comparten una gran cantidad de historias se encuentran.
+
+Según esta teoría, la línea de tiempo de cada regresión puede ser representada por un rollo de película. Todas las líneas de tiempo muestran el mismo comienzo, pero pueden divergir a medida que avanza. Las películas son, de principio a fin, paralelas entre sí, pero es posible que se encuentren cuando el final de un rollo está unido al de otro. Cuando se unen, el contenido de la película de uno no afecta al del otro; por lo que incluso si uno cambia, no modifica al otro. Sin embargo, si una parte del rollo unido se quema, el resto también se quemará. Es por eso que, al matar a uno de los dos seres involucrados mientras la Teoría de la Película Desconectada está activa, el otro también morirá.
+                </p>
+            </div>
+            <div class="image-right">
+                <img 
+                    src="https://i.pinimg.com/736x/d5/7d/74/d57d74cbe715400f121b79ec2bf3b375.jpg" 
+                    alt="Imagen izquierda">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre nosotros</h2>
+                <p>Exploramos mundos extraordinarios a través de historias y personajes inolvidables. Únete a nuestra comunidad y comparte tu pasión por Omniscient Reader's Viewpoint.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces útiles</h2>
+                <ul class="centered-menu">
+                    <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                    <li><a href="{{ url_for('webtoon') }}">Webtoon y Novela</a></li>
+                    <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+                    <li><a href="{{ url_for('personajes') }}">Personajes</a></li>
+                    <li><a href="{{ url_for('conceptos') }}">Conceptos</a></li>
+                    <li><a href="{{ url_for('opinion') }}">Opinión</a></li>
+                    <li><a href="{{ url_for('dokkaebis') }}">Dokkaebis, Demonios y Dioses externos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contáctanos</h2>
+                <p>Email: contacto@omniscientview.com</p>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Redes sociales:</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Omniscient Reader's Viewpoint | Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>

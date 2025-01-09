@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Omniscient Reader's Viewpoint</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Galería</h1>
+    <div class="gallery">
+        <img src="https://i.pinimg.com/736x/9e/79/70/9e79703648189bf332e718a85cfbaac2.jpg" alt="Imagen 1">
+        <img src="https://i.pinimg.com/736x/94/55/db/9455db8d1d495e0e1560c367c80f909b.jpg" alt="Imagen 2">
+        <img src="https://i.pinimg.com/736x/cb/8f/1d/cb8f1dc2eb84c202134476a8efb7b4c2.jpg" alt="Imagen 3">
+        <img src="https://i.pinimg.com/736x/4b/cc/12/4bcc12e4ad97596df6dee335b31a5e27.jpg" alt="Imagen 4">
+        <img src="https://i.pinimg.com/736x/d2/75/85/d27585ef6807efc700864a2a1a06d213.jpg" alt="Imagen 5">
+        <img src="https://i.pinimg.com/736x/51/ab/b3/51abb338584c1ec604981180ae948290.jpg" alt="Imagen 6">
+        <img src="https://i.pinimg.com/736x/a4/88/72/a48872595d71ab40733371c0dde07dd4.jpg" alt="Imagen 7">
+        <img src="https://i.pinimg.com/736x/c2/e2/90/c2e29076f347797c5b8d58fc344e470a.jpg" alt="Imagen 8">
+        <img src="https://i.pinimg.com/736x/9b/cf/57/9bcf57ddfa3a6e354b7d7efe42a1cbb0.jpg" alt="Imagen 9">
+        <img src="https://i.pinimg.com/736x/07/e6/b8/07e6b888dd8824a8bee542c7bba0c23d.jpg " alt="Imagen 10">
+        <img src="https://i.pinimg.com/736x/89/3c/11/893c1159bf9afd2a97619a6b91f07ef1.jpg" alt="Imagen 11">
+        <img src="https://i.pinimg.com/736x/e5/90/69/e590691dc7cd59a20957bd3aa864f0a1.jpg" alt="Imagen 12">
+        <img src="https://i.pinimg.com/736x/05/84/4d/05844df0c1cffd113d098209b3e22526.jpg" alt="Imagen 13">
+        <img src="https://i.pinimg.com/736x/99/f1/40/99f140b611dba3b25895c945275228b6.jpg" alt="Imagen 14">
+        <img src="https://i.pinimg.com/736x/a8/49/cc/a849ccb0ab0eecd7bc01d7c1ba50aa6d.jpg" alt="Imagen 15">
+        <img src="https://i.pinimg.com/736x/ed/43/db/ed43dbc7e6a057761ca76d13ab1f9f6f.jpg" alt="Imagen 16">
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre nosotros</h2>
+                <p>Exploramos mundos extraordinarios a través de historias y personajes inolvidables. Únete a nuestra comunidad y comparte tu pasión por Omniscient Reader's Viewpoint.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces útiles</h2>
+                <ul class="centered-menu">
+                    <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                    <li><a href="{{ url_for('webtoon') }}">Webtoon y Novela</a></li>
+                    <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+                    <li><a href="{{ url_for('personajes') }}">Personajes</a></li>
+                    <li><a href="{{ url_for('conceptos') }}">Conceptos</a></li>
+                    <li><a href="{{ url_for('opinion') }}">Opinión</a></li>
+                    <li><a href="{{ url_for('dokkaebis') }}">Dokkaebis, Demonios y Dioses externos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contáctanos</h2>
+                <p>Email: contacto@omniscientview.com</p>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Redes sociales:</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Omniscient Reader's Viewpoint | Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
